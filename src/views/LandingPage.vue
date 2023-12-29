@@ -36,12 +36,38 @@ import Calculator from '../components/Calculator.vue'
 
     <div class="container t1 d-flex justify-content-center">
 
-        <h1 class="text-white">My Portfolio Website <br> </h1>
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <p class="mt-5 mx-5">
+                <h2>Hello there! <br>
+                I'm Ferbe Marie S. Respuesto 👋 </h2><br>
+                I'm a fourth-year college student starting to learn about programming,
+                 interestingly diving into the worlds of coding. While my skills are in the beginner phase,
+                  I'm on a journey to master the fundamentals of front-end development.
+                   From crafting engaging user interfaces and front ends to understanding the
+                    back ends and core principles of coding, I'm dedicated to expanding my knowledge
+                     and creating meaningful projects. Join me on this learning adventure as i explore 
+                     it's art, and strive to make a positive impact through technology and society. 🚀
+                </p>
+                
+            </div>
+            <div class="col-md-6 ">
+                <div class="rounded-circle d-flex justify-content-center mx-5 " style="border: 6px solid white; width: 300px;">
+                    <img src="../../public/ferbe.jpg" width="300px;" class="img-fluid rounded-circle mx-5">
+                </div>
+            </div>
+            
+            
+        </div>
+        
     </div>
 
     <div class="container wrapper1 d-flex text-center">
+
+        <div class="links position-absolute">
         <router-link to="/project" class="text-dark button w-25 fw-bold text-white text-decoration-none">Calculator</router-link>
-        <router-link to="/login" class="text-dark button w-25 fw-bold text-white text-decoration-none">Todo List</router-link>
+        <router-link to="/login" class="text-dark button w-25 fw-bold text-white text-decoration-none" style="margin-left: 30px;">Todo List</router-link>
+        </div>
     </div>
     
     
@@ -76,5 +102,9 @@ import Calculator from '../components/Calculator.vue'
     }
     .t1{
         margin-top: 200px;
+    }
+    .links{
+        left: 0;
+        margin-top: -80px;
     }
 </style>
